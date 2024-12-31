@@ -1,0 +1,78 @@
+.egov-service-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', 'Selawik', 'Open Sans', Arial, sans-serif;
+    background: linear-gradient(to bottom, #f0f4f7, #d9e9f7);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .service-card {
+    background: #ffffff;
+    background: linear-gradient(135deg, #e8f8f5, #e0f7fa);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2d3436;
+  }
+  
+  .apply-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(to right, #6a82fb, #fc5c7d);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .apply-button:hover {
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+  }
+  
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 2rem;
+    }
+    .subheading {
+      font-size: 1rem;
+    }
+    .service-card h3 {
+      font-size: 1.2rem;
+    }
+  }
+  

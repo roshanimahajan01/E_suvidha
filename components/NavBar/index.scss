@@ -1,0 +1,107 @@
+.dashboard-container {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white; // Light background for contrast
+    min-height: 10vh;
+    padding: 20px;
+}  
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #001e5a; // Dark navy for a professional look
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+    color: white;
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        object-fit: contain;
+      }
+
+      .project-name {
+        font-size: 26px;
+        font-weight: bold;
+        color: #fbbf24; // Golden yellow for highlight
+        letter-spacing: 1px;
+      }
+    }
+
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .user-avatar {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: transform 0.3s ease, border 0.3s ease;
+
+        .avatar {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 3px solid #fbbf24; // Golden border for luxury effect
+          transition: border-color 0.3s ease;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          .avatar {
+            border-color: #ff9800; // Brighter highlight on hover
+          }
+        }
+      }
+
+      .logout-button {
+        padding: 10px 24px;
+        background-color: #e53e3e; // Rich red for logout
+        color: white;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #c53030; // Darker red on hover
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .language-dropdown {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    color: #001e5a;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  
+    &:hover {
+      border-color: #001e5a;
+    }
+  
+    &:focus {
+      outline: none;
+      border-color: #fbbf24;
+    }
+  }
+  
